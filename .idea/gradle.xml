@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/dive-log" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/dive-log" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fx-provider" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/fx-provider" />
+            <option value="$PROJECT_DIR$/fx-provider/clients" />
+            <option value="$PROJECT_DIR$/fx-provider/clients/aws-resource" />
+            <option value="$PROJECT_DIR$/fx-provider/clients/currency-layer" />
+            <option value="$PROJECT_DIR$/fx-provider/clients/feign-common" />
+            <option value="$PROJECT_DIR$/fx-provider/clients/kafka" />
+            <option value="$PROJECT_DIR$/fx-provider/clients/toast" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-admin" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-admin/fx-admin-front" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-admin/fx-admin-server" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-api" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-collector" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-common" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-core" />
+            <option value="$PROJECT_DIR$/fx-provider/fx-worker" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

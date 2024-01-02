@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: fx-worker
+  profiles:
+    include:
+      - db
+      - actuator
+      - aws-resource
+      - cloud-aws
+      - server-port
+    group:
+      local: db-local,aws-resource-localstack,cloud-aws-local,port-local
+      test: db-test,aws-resource-localstack,cloud-aws-test
+      dev: db-dev,aws-resource-dev,cloud-aws-dev
+      beta: db-beta,aws-resource-beta,cloud-aws-beta
+      stage: db-stage,aws-resource-stage,cloud-aws-stage
+      prod: db-prod,aws-resource-prod,cloud-aws-prod
+    active: local

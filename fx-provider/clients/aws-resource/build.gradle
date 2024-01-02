@@ -1,0 +1,16 @@
+description("clients:aws-resource module")
+
+apply plugin: "java-library"
+
+bootJar { enabled = false }
+jar { enabled = true }
+
+dependencies {
+    implementation(project(":fx-common"))
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-configuration-processor")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+
+    api("io.awspring.cloud:spring-cloud-starter-aws-messaging")
+    implementation("org.testcontainers:localstack:1.17.3")
+}

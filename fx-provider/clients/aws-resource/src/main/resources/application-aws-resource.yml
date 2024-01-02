@@ -1,0 +1,38 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: aws-resource-localstack
+cloud:
+  aws:
+    sns:
+      enabled: false
+    s3:
+      enabled: false
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+aws:
+  sns.topic:
+      fx-trade-event: 'fx-trade-event-localstack'
+  sqs:
+    mode: aws-resource-localstack
+    queue:
+      fx-send: 'fx-send-localstack'
+
+---
+spring:
+  config:
+    activate:
+      on-profile: aws-resource-dev
+sqs.mock:
+  enabled: false
+aws:
+  sns:
+    topic:
+      fx-trade-event: 'fx-trade-event-dev'
+  sqs:
+    mode: aws-resource-dev
+    queue:
+      fx-send: 'fx-send-dev' # AWS SQS 는 ARN 을 이용해서 접근하시는 것이 Name 만 이용하는 것보다 탐색 시간이 빨라집니다.
